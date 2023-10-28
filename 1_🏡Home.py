@@ -18,7 +18,7 @@ import plotly.express as px  # pip install plotly-express
 # find more emoji :- https://www.webfx.com/tools/emoji-cheat-sheet/
 
 
-def load_lottieurl(url:):
+def load_lottieurl(url:str):
     r = requests.get(url)
     if r.status_code != 200:
          return none
