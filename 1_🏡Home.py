@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 import requests
-from streamlit_lottie import st_lottie
 import plotly.express as px  # pip install plotly-express
 
 
@@ -19,7 +18,7 @@ import plotly.express as px  # pip install plotly-express
 # find more emoji :- https://www.webfx.com/tools/emoji-cheat-sheet/
 
 
-def load_lottieurl(url: str):
+def load_lottieurl(url:):
     r = requests.get(url)
     if r.status_code != 200:
          return none
@@ -70,6 +69,6 @@ with st.container():
     st.write("[YouTube Channel >](https://www.youtube.com/channel/UCpEsrYd-6i0fhpcbgAp9fJg)")
 
 
-      #st_lottie(lottie_coding, height=350, key="analytics")
+      
 
 #--------------------------------------------------------------------------------------------
